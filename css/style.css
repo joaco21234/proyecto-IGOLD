@@ -1,0 +1,219 @@
+
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* estilos de body */
+
+body {
+    background-color: #121111;
+}
+
+/* estilos de header */
+
+header {
+    display: flex;
+}
+
+
+header img {
+    width: 24%;
+    height: 100%;
+    padding-bottom: 90px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    padding-top: 100px;
+
+}
+
+header nav ul li a {
+    color: aliceblue;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #144443;
+}
+
+/* estilos de main */
+
+.productos {
+    text-align: center;
+    color: aliceblue;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 50px 100px;
+    
+
+}
+
+h1 {
+    display:flex;
+    padding-left: 35px;
+    color: whitesmoke;
+}
+
+p {
+    color: whitesmoke;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+main div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* estilos de footer */
+
+footer {
+    padding:600px 0px 100px 0px;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* estilos de barra de navegación */
+
+.navbar .bg-body-tertiary {
+    background-color: #121111;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    padding-top: 140px;
+    background-color: #121111;
+}
+
+.form-control-me-2-barra {
+    width: 400px;
+    background-color: #1e2220;
+}
+
+
+/*estilos de contacto*/
+
+.formulario input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    color: #fff;
+}
+
+.seccion {
+    background-color: rgb(29, 29, 29);
+    padding: 20px 0;
+    max-width: 500px;
+    margin: auto; 
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 8px;
+}
+
+/* etilos de iphones */
+
+.iphones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 50px 100px;
+}
+
+/* estilos de plan canje*/
+
+.formulario-canje input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    color: #fff;
+}
+
+.seccion {
+    background-color: rgb(29, 29, 29);
+    padding: 20px 0;
+    max-width: 500px;
+    margin: auto; 
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+}
+
+/* estilos de tablet */
+
+@media screen and (max-width: 834px) {
+
+header nav ul {
+    padding: 100px 200px 0 0;
+    white-space: nowrap;
+    }
+
+
+
+.iphones {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 50px;
+}
+
+.container-fluid {
+    padding: 100px 200px 0 0;
+}
+
+}
+
+/* estilos de celular */
+
+@media screen and (max-width: 500px) {
+
+/* aca los enlaces irian en un menu hamburguesa pero no me salio :( */
+
+header img {
+    width: 40%;
+    padding-bottom: 50px;
+}
+
+header nav ul {
+    padding-top: 0;
+    display: block;
+    white-space: nowrap;
+    gap: 0.5rem;
+}
+
+.form-control-me-2-barra {
+    max-width: 200px;
+}
+
+.iphones {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 50px;
+}
+
+.container-fluid {
+    padding: 75px 0 0 0;
+    align-items: center;
+    display: block;
+    padding-bottom: 20px;
+}
+
+}
