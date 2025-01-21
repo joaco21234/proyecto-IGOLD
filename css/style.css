@@ -104,17 +104,6 @@ footer {
     background-color: #1e2220;
 }
 
-
-/*estilos de contacto*/
-
-.formulario input {
-    padding: 10px;
-    border: none;
-    border-bottom: 1px solid #000;
-    background-color: transparent;
-    color: #fff;
-}
-
 .seccion {
     background-color: rgb(29, 29, 29);
     padding: 20px 0;
@@ -123,6 +112,24 @@ footer {
     margin-top: 50px;
     margin-bottom: 100px;
     border-radius: 8px;
+}
+
+/*estilos de contacto*/
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+
+.formulario input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    color: #fff;
 }
 
 /* etilos de iphones */
@@ -134,9 +141,28 @@ footer {
     padding: 50px 100px;
 }
 
+/* estilos de accsesorios */
+
+.accsesorios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 50px 100px;
+}
+
 /* estilos de plan canje*/
 
-.formulario-canje input {
+.formulario-canje {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    max-width: 500px;
+    margin: auto;
+    background-color: rgb(29, 29, 29);
+}
+
+form input {
     padding: 10px;
     border: none;
     border-bottom: 1px solid #000;
@@ -144,20 +170,12 @@ footer {
     color: #fff;
 }
 
-.seccion {
-    background-color: rgb(29, 29, 29);
-    padding: 20px 0;
-    max-width: 500px;
-    margin: auto; 
-    margin-top: 50px;
-    margin-bottom: 100px;
-    border-radius: 8px;
-}
-
 h2 {
     color: whitesmoke;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 /* estilos de tablet */
@@ -169,9 +187,17 @@ header nav ul {
     white-space: nowrap;
     }
 
-
+.productos {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 50px;
+}
 
 .iphones {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 50px;
+}
+
+.accsesorios {
     grid-template-columns: repeat(2, 1fr);
     padding: 50px 50px;
 }
@@ -180,6 +206,9 @@ header nav ul {
     padding: 100px 200px 0 0;
 }
 
+.formulario-canje {
+    padding: 15px;
+}
 }
 
 /* estilos de celular */
@@ -204,7 +233,18 @@ header nav ul {
     max-width: 200px;
 }
 
+
+.productos {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 50px;
+}
+
 .iphones {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 50px;
+}
+
+.accsesorios {
     grid-template-columns: repeat(1, 1fr);
     padding: 50px 50px;
 }
@@ -214,6 +254,9 @@ header nav ul {
     align-items: center;
     display: block;
     padding-bottom: 20px;
+}
+.formulario-canje {
+    padding: 15px;
 }
 
 }
