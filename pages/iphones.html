@@ -12,21 +12,40 @@
 <body>
     <!-- banner principal -->
     <header>
-        <img src="../img/logo-igold.png" alt="logo">
+        <img src="/img/imagen-logo.png" alt="logo">
         <!-- menu de navegacion -->
         <nav>
             <div class="container-fluid">
                 <form class="d-flex" role="search">
-                    <input class="form-control-me-2-barra" type="search" placeholder="Buscar..." aria-label="Search">
+                    <input class="form-control-me-2-barra" type="search" placeholder="¿Que estas buscando?" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Ir</button>
                 </form>
             </div>
+            <!-- menu de hamburguesa -->
+            <div class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <!-- boton de menu hamburguesa -->
+                    <button class="navbar-toggler-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="" aria-expanded="false" aria-label="">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                                <a class="nav-link active" aria-current="page" href="iphones.html">CELULARES</a>
+                                <a class="nav-link active" aria-current="page" href="accsesorios.html">ACCSESORIOS</a>
+                                <a class="nav-link active" aria-current="page" href="plan-canje.html">PLAN CANJE</a>
+                                <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO<a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="iphones.html">Celulares</a></li>
-                <li><a href="accsesorios.html">Accsesorios</a></li>
-                <li><a href="plan-canje.html">Plan canje</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="iphones.html">CELULARES</a></li>
+                <li><a href="accsesorios.html">ACCSESORIOS</a></li>
+                <li><a href="plan-canje.html">PLAN CANJE</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -48,10 +67,17 @@
 <!-- pie de pagina -->
 
     <footer>
-        Todos los derechos reservados
+        <p class="parrafo-footer">¡Gracias por visitar nuestra tienda!
+        Ofrecemos una amplia selección de iPhones y accesorios de alta calidad a precios competitivos.
+        Compra con confianza, con envíos rápidos y atención personalizada.
+        
+        📞 Contáctanos: 3516115574
+        📧 Email: igold.cba@gmail.com
+        🌍 Dirección: Av.colon 436
+        
+        Síguenos en redes sociales:
+        Instagram | Twitter</p>
     </footer>
-
-
 
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

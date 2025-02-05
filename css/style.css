@@ -1,256 +1,489 @@
-
+@charset "UTF-8";
 /*reset*/
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 /* estilos de body */
-
 body {
-    background-color: #121111;
+  background-color: #000000;
+  overflow-x: hidden;
 }
 
 /* estilos de header */
-
 header {
-    display: flex;
+  display: flex;
+  align-items: center;
 }
-
 header img {
-    width: 24%;
-    height: 100%;
-    padding-bottom: 90px;
+  width: 25%;
+  height: 100%;
 }
-
 header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2.5rem;
-    padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+  padding-right: 0px;
 }
-
 header nav ul li a {
-    color: aliceblue;
-    font-size: 25px;
-    text-decoration: none;
+  color: aliceblue;
+  font-size: 20px;
+  text-decoration: none;
 }
 
-a:hover {
-    color: #144443;
+.contenedor-h4 {
+  display: inline;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  text-align: center;
 }
 
-/* estilos de main */
-
-.productos {
-    text-align: center;
-    color: aliceblue;
-    display: grid;
-    align-content: center;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    padding: 50px 100px;
+h4 {
+  background-color: #FD8902;
+  font-size: 20px;
+  color: whitesmoke;
+  padding-bottom: 2px;
+  padding-top: 1px;
 }
 
-h1 {
-    display:flex;
-    padding-left: 35px;
-    color: whitesmoke;
+/* estilos de menu de hamburguesa */
+.navbar.navbar-expand-lg.bg-body-tertiary {
+  padding: 0px;
+  align-items: end;
+  display: none;
 }
 
-p {
-    color: whitesmoke;
-    padding-left: 35px;
-    padding-top: 10px;
+button.navbar-toggler.collapsed {
+  padding-left: 0px;
+  align-items: end;
+  display: none;
 }
 
-main div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* estilos de footer */
-
-footer {
-    padding:600px 0px 100px 0px;
-    text-align: center;
-    color: aliceblue;
+span.navbar-toggler-icon {
+  background-color: tomato;
+  padding-left: 0px;
+  align-items: end;
+  display: none;
 }
 
 /* estilos de barra de navegación */
-
-.navbar .bg-body-tertiary {
-    background-color: #121111;
-}
-
 .container-fluid {
-    display: flex;
-    justify-content: center;
-    padding-top: 140px;
-    background-color: #121111;
+  display: flex;
+  justify-content: center;
+  padding: 105px 0px 50px 80px;
+  background-color: #000000;
 }
 
 .form-control-me-2-barra {
-    width: 400px;
-    background-color: #1e2220;
+  width: 400px;
+  background-color: #000000;
+  border: none;
+  border: solid 1px whitesmoke;
 }
 
-.seccion {
-    background-color: rgb(29, 29, 29);
-    padding: 20px 0;
-    max-width: 500px;
-    margin: auto; 
-    margin-top: 50px;
-    margin-bottom: 100px;
-    border-radius: 8px;
+/* estilos de boton de busqueda */
+.btn-outline-success {
+  color: #fff;
+  background-color: #FD8902;
+  border-color: #FD8902;
+  --bs-btn-hover-bg: #696565;
+  --bs-btn-hover-border-color: #ffffff;
+}
+
+/* estilo de  iconos de usuario y carro de compra*/
+.carro-compra {
+  color: #FD8902;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 1250px;
+  top: 160px;
+}
+
+.usuario {
+  color: #FD8902;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 1200px;
+  top: 159px;
+}
+
+/* estilo de enlaces */
+a {
+  text-decoration: none;
+  position: relative;
+}
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  height: 3px;
+  width: 0px;
+  background-color: #FD8902;
+  transition: width 0.5s ease;
+}
+a:hover::after {
+  width: 100%;
+}
+
+/* estilos de main */
+.imagenes-moviles {
+  padding-top: 0px;
+}
+
+.seccion-informacion {
+  background-color: #D67000;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  text-align: center;
+  padding-top: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h3 {
+  color: rgb(0, 0, 0);
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.auto {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 110px;
+  color: #ECDFCC;
+}
+
+.tarjeta {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 490px;
+  color: #ECDFCC;
+}
+
+.carro-promo {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 920px;
+  color: #ECDFCC;
+}
+
+.productos {
+  text-align: center;
+  color: aliceblue;
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 50px 100px;
+}
+
+h1 {
+  display: flex;
+  padding-left: 35px;
+  color: whitesmoke;
+}
+
+main div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* estilos de parrafos */
+p {
+  color: whitesmoke;
+  padding: 10px 0 20px 0px;
+  margin: auto;
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 /*estilos de contacto*/
-
 .formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+}
+.formulario input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+  color: #fff;
 }
 
-.formulario input {
-    padding: 10px;
-    border: none;
-    border-bottom: 1px solid #000;
-    background-color: transparent;
-    color: #fff;
+.seccion {
+  background-color: rgb(29, 29, 29);
+  padding: 20px 0;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  border-radius: 8px;
 }
 
 /* etilos de iphones */
-
 .iphones {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    padding: 50px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 50px 100px;
 }
 
 /* estilos de accsesorios */
-
 .accsesorios {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    padding: 50px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 50px 100px;
 }
 
 /* estilos de plan canje*/
-
 .formulario-canje {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px;
-    max-width: 500px;
-    margin: auto;
-    background-color: rgb(29, 29, 29);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  max-width: 500px;
+  margin: auto;
+  background-color: rgb(29, 29, 29);
 }
-
-form input {
-    padding: 10px;
-    border: none;
-    border-bottom: 1px solid #000;
-    background-color: transparent;
-    color: #fff;
+.formulario-canje input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+  color: #fff;
 }
 
 h2 {
-    color: whitesmoke;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+  color: whitesmoke;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* estilos de footer */
+footer {
+  padding: 600px 0px 100px 0px;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+
+.parrafo-footer {
+  color: whitesmoke;
 }
 
 /* estilos de tablet */
-
 @media screen and (max-width: 834px) {
-
-header nav ul {
-    padding: 100px 200px 0 0;
-    white-space: nowrap;
-}
-
-.productos {
+  header img {
+    width: 30%;
+    height: 30%;
+  }
+  header nav ul {
+    padding: 60px 0px 0 0;
+  }
+  header nav ul li a {
+    font-size: 18px;
+    gap: 0.1rem;
+  }
+  .carro-compra {
+    color: #FD8902;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 900px;
+    top: 120px;
+  }
+  .usuario {
+    color: #FD8902;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 850px;
+    top: 120px;
+  }
+  .auto {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 645px;
+    left: 65px;
+    color: #ECDFCC;
+  }
+  .tarjeta {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 645px;
+    left: 305px;
+    color: #ECDFCC;
+  }
+  .carro-promo {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 645px;
+    left: 600px;
+    color: #ECDFCC;
+  }
+  .productos {
     grid-template-columns: repeat(2, 1fr);
     padding: 50px 50px;
-}
-
-.iphones {
+  }
+  .iphones {
     grid-template-columns: repeat(2, 1fr);
     padding: 50px 50px;
-}
-
-.accsesorios {
+  }
+  .accsesorios {
     grid-template-columns: repeat(2, 1fr);
     padding: 50px 50px;
-}
-
-.container-fluid {
-    padding: 100px 200px 0 0;
-}
-
-.formulario-canje {
+  }
+  .container-fluid {
+    padding: 100px 0px 0 0;
+  }
+  .formulario-canje {
     padding: 15px;
+  }
 }
-
-}
-
 /* estilos de celular */
-
 @media screen and (max-width: 500px) {
-
-/* aca los enlaces irian en un menu hamburguesa pero no me salio :( */
-
-header img {
-    width: 40%;
-    padding-bottom: 50px;
-}
-
-header nav ul {
-    padding-top: 0;
+  header img {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    padding-right: 0px;
+  }
+  header nav ul {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 2px;
+    width: 0px;
+    background-color: rgb(9, 125, 138);
+    transition: width 0.5s ease;
+    display: none;
+  }
+  .navbar.navbar-expand-lg.bg-body-tertiary {
+    padding: 0px;
+    align-items: end;
     display: block;
-    white-space: nowrap;
-    gap: 0.5rem;
-}
-
-.form-control-me-2-barra {
-    max-width: 200px;
-}
-
-.productos {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 50px 50px;
-}
-
-.iphones {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 50px 50px;
-}
-
-.accsesorios {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 50px 50px;
-}
-
-.container-fluid {
-    padding: 75px 0 0 0;
-    align-items: center;
-    display: block;
-    padding-bottom: 20px;
-}
-.formulario-canje {
+  }
+  .container-fluid {
+    display: none;
+    padding: 0;
+    background-color: #FD8902;
+    align-items: end;
+  }
+  a.nav-link.active {
+    padding: 0.3px;
+  }
+  ul.navbar-nav {
+    padding: 0;
+    gap: 0;
+  }
+  button.navbar-toggler-icon {
+    background-color: #FD8902;
     padding: 15px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 140px;
+  }
+  .navbar-collapse {
+    flex-basis: 100%;
+  }
+  .imagenes-moviles {
+    height: 350px;
+    width: 250%;
+    padding-right: 500px;
+  }
+  .form-control-me-2-barra {
+    max-width: 200px;
+    display: none;
+  }
+  .btn-outline-success {
+    display: none;
+  }
+  /* estlos de seccion informacion */
+  .seccion-informacion {
+    gap: 2rem;
+    padding: 30px;
+  }
+  .seccion-informacion h3 {
+    font-size: 15px;
+  }
+  .seccion-informacion .auto {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 628px;
+    left: 30px;
+    color: #ECDFCC;
+  }
+  .seccion-informacion .tarjeta {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 628px;
+    left: 135px;
+    color: #ECDFCC;
+  }
+  .seccion-informacion .carro-promo {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 628px;
+    left: 270px;
+    color: #ECDFCC;
+  }
+  /* estilos de las otras paginas */
+  .productos {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 50px;
+  }
+  .iphones {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 50px;
+  }
+  .accsesorios {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 50px;
+  }
+  .formulario-canje {
+    padding: 15px;
+  }
+  p {
+    font-size: 15px;
+  }
 }
 
-}
+/*# sourceMappingURL=style.css.map */

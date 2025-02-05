@@ -12,28 +12,78 @@
 <body>
     <!-- banner principal -->
     <header>
-        <img src="img/logo-igold.png" alt="logo">
+        <img src="img/imagen-logo.png" alt="logo">
         <!-- menu de navegacion -->
         <nav>
+            <!-- barra de busqueda -->
             <div class="container-fluid">
                 <form class="d-flex" role="search">
-                    <input class="form-control-me-2-barra" type="search" placeholder="Buscar..." aria-label="Search">
+                    <input class="form-control-me-2-barra" type="search" placeholder="¿Que estas buscando?" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Ir</button>
                 </form>
             </div>
+            <!-- iconos uauario y carro de compras de bootstrap -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="carro-compra" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="usuario" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+            </svg>
+            <!-- menu de hamburguesa -->
+            <div class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <!-- boton de menu hamburguesa -->
+                    <button class="navbar-toggler-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="" aria-expanded="false" aria-label="">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                                <a class="nav-link active" aria-current="page" href="pages/iphones.html">CELULARES</a>
+                                <a class="nav-link active" aria-current="page" href="pages/accsesorios.html">ACCSESORIOS</a>
+                                <a class="nav-link active" aria-current="page" href="pages/plan-canje.html">PLAN CANJE</a>
+                                <a class="nav-link active" aria-current="page" href="pages/contacto.html">CONTACTO<a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <ul>    
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/iphones.html">Celulares</a></li>
-                <li><a href="pages/accsesorios.html">Accsesorios</a></li>
-                <li><a href="pages/plan-canje.html">Plan canje</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="pages/iphones.html">CELULARES</a></li>
+                <li><a href="pages/accsesorios.html">ACCSESORIOS</a></li>
+                <li><a href="pages/plan-canje.html">PLAN CANJE</a></li>
+                <li><a href="pages/contacto.html">CONTACTO</a></li>
             </ul>
+            <div class="contenedor-h4">
+                <h4>10% off con tranferencia</h4>
+            </div>
         </nav>
     </header>
 
     <!-- contenido principal -->
 
     <main>
+        <div class="imagenes-moviles">
+            <img src="img/imagen-mueven.png" alt="imagen principal">
+        </div>
+        <div class="seccion-informacion">
+            <h3>Envios gratis</h3>
+            <h3>6 Cuotas sin interes</h3>
+            <h3>Tienda verificada</h3>
+            <!-- iconos de carro,auto y tarjeta -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="carro-promo" viewBox="0 0 16 16">
+                <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="auto" viewBox="0 0 16 16">
+                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarjeta" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1"/>
+            </svg>
+        </div>
+        <!-- secciones de los productos -->
         <h1>Productos destacados</h1>
         <div class="productos">
             <img src="img/producto.png" alt="imagen de producto">
@@ -48,15 +98,29 @@
             <img src="img/producto2.png" alt="imagen de producto">
             <img src="img/producto2.png" alt="imagen de producto">
         </div>
+        <h1>Ofertas</h1>
+        <div class="productos">
+            <img src="img/img.webp" alt="imagen de producto">
+            <img src="img/img2.webp" alt="imagen de producto">
+            <img src="img/img.webp" alt="imagen de producto">
+            <img src="img/img2.webp" alt="imagen de producto">
+        </div>
     </main>
 
     <!-- pie de pagina -->
 
     <footer>
-        Todos los derechos reservados
+        <p class="parrafo-footer">¡Gracias por visitar nuestra tienda!
+            Ofrecemos una amplia selección de iPhones y accesorios de alta calidad a precios competitivos.
+            Compra con confianza, con envíos rápidos y atención personalizada.
+            
+            📞 Contáctanos: 3516115574
+            📧 Email: igold.cba@gmail.com
+            🌍 Dirección: Av.colon 436
+            
+            Síguenos en redes sociales:
+            Instagram | Twitter</p>
     </footer>
-
-
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
