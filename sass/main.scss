@@ -408,6 +408,12 @@ header {
 /* estilos de celular */
 
 @media screen and (max-width: 500px) {
+
+    body {
+        background-color: #000000;
+        overflow-x: hidden;
+    }
+
 header {
     img {
     width: 50%;
@@ -497,32 +503,30 @@ button.navbar-toggler-icon {
     font-size: 15px;
     }
     .auto {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    top: 628px;
+    top: 638px;
     left: 30px;
     color: #ECDFCC;
     }
-
-.tarjeta {
-width: 15px;
-height: 15px;
-position: absolute;
-top: 628px;
-left: 135px;
-color: #ECDFCC;
-}
-
-.carro-promo {
-    width: 15px;
-    height: 15px;
+    .tarjeta {
+    width: 20px;
+    height: 20px;
     position: absolute;
-    top: 628px;
-    left: 270px;
+    top: 638px;
+    left: 126px;
     color: #ECDFCC;
     }
-}
+    .carro-promo {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 638px;
+        left: 260px;
+        color: #ECDFCC;
+        }
+    }
 
 /* estilos de las otras paginas */
 

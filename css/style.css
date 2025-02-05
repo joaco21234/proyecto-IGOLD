@@ -368,6 +368,10 @@ footer {
 }
 /* estilos de celular */
 @media screen and (max-width: 500px) {
+  body {
+    background-color: #000000;
+    overflow-x: hidden;
+  }
   header img {
     width: 50%;
     height: 50%;
@@ -442,27 +446,27 @@ footer {
     font-size: 15px;
   }
   .seccion-informacion .auto {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    top: 628px;
+    top: 638px;
     left: 30px;
     color: #ECDFCC;
   }
   .seccion-informacion .tarjeta {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    top: 628px;
-    left: 135px;
+    top: 638px;
+    left: 126px;
     color: #ECDFCC;
   }
   .seccion-informacion .carro-promo {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    top: 628px;
-    left: 270px;
+    top: 638px;
+    left: 260px;
     color: #ECDFCC;
   }
   /* estilos de las otras paginas */
