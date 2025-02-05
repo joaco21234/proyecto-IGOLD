@@ -473,9 +473,9 @@ button.navbar-toggler-icon {
 }
 
 .imagenes-moviles {
-    height: 350px;
-    width: 226%;
-    padding-right: 500px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .form-control-me-2-barra {
