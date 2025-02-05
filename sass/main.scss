@@ -506,24 +506,24 @@ button.navbar-toggler-icon {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 638px;
-    left: 30px;
+    top: 647px;
+    left: 27px;
     color: #ECDFCC;
     }
     .tarjeta {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 638px;
-    left: 126px;
+    top: 647px;
+    left: 120px;
     color: #ECDFCC;
     }
     .carro-promo {
         width: 20px;
         height: 20px;
         position: absolute;
-        top: 638px;
-        left: 260px;
+        top: 647px;
+        left: 250px;
         color: #ECDFCC;
         }
     }
@@ -552,4 +552,25 @@ button.navbar-toggler-icon {
 p {
     font-size: 15px;
 }
+
+.carro-compra {
+    color: #FD8902;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 900px;
+    top: 120px;
+    display: none;
+}
+
+.usuario {
+    color: #FD8902;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 850px;
+    top: 120px;
+    display: none;
+}
+
 }
