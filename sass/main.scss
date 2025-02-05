@@ -411,7 +411,8 @@ header {
 
     body {
         background-color: #000000;
-        overflow-x: hidden;
+        width: 100%;
+        overflow-x: hidden !important;
     }
 
 header {
