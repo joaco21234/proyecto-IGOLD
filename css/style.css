@@ -373,8 +373,8 @@ footer {
     overflow-x: hidden;
   }
   header img {
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
     display: flex;
     padding-right: 0px;
   }
@@ -417,13 +417,6 @@ footer {
     background-color: #FD8902;
     padding: 15px;
     display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0px;
-    left: 140px;
-  }
-  .navbar-collapse {
-    flex-basis: 100%;
   }
   .imagenes-moviles {
     height: 350px;
@@ -449,7 +442,7 @@ footer {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 647px;
+    top: 720px;
     left: 27px;
     color: #ECDFCC;
   }
@@ -457,16 +450,16 @@ footer {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 647px;
-    left: 120px;
+    top: 720px;
+    left: 140px;
     color: #ECDFCC;
   }
   .seccion-informacion .carro-promo {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 647px;
-    left: 250px;
+    top: 720px;
+    left: 270px;
     color: #ECDFCC;
   }
   /* estilos de las otras paginas */
