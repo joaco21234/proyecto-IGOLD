@@ -360,17 +360,35 @@ h2 {
   justify-content: center;
 }
 
+/*estilos de footer*/
 footer {
   padding: 600px 0px 100px 0px;
   color: aliceblue;
-  display: flex;
 }
-
-/* esilo de iconos del footer */
-.instagram {
-  color: #970d77;
-  width: 30px;
-  height: 30px;
+footer .iconos-footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+footer .iconos-footer a {
+  color: #fd9c4c;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  color: aliceblue;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  color: #fd9c4c;
 }
 
 @media screen and (max-width: 834px) {

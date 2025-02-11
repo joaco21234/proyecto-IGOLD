@@ -1,14 +1,32 @@
 
+/*estilos de footer*/
+
 footer {
     padding: 600px 0px 100px 0px;
     color: aliceblue;
-    display: flex;
-}
-
-/* esilo de iconos del footer */
-
-.instagram {
-    color: #970d77;
-    width: 30px;
-    height: 30px;
+    .iconos-footer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        gap: 20px;
+        a{
+            color: #fd9c4c;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        li {
+            list-style: none;
+            a {
+                color: aliceblue;
+                text-decoration: none;
+                &:hover {
+                    color: #fd9c4c;
+                }
+            }
+        }
+    }
 }
