@@ -1,15 +1,18 @@
 @charset "UTF-8";
+/*reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*body*/
 body {
   background-color: #000000;
   overflow-x: hidden;
 }
 
+/*estilos header*/
 header {
   display: flex;
   align-items: center;
@@ -48,6 +51,7 @@ h4 {
   padding-top: 1px;
 }
 
+/*estilos nav*/
 .navbar.navbar-expand-lg.bg-body-tertiary {
   padding: 0px;
   align-items: end;
@@ -391,6 +395,7 @@ footer ul li a:hover {
   color: #fd9c4c;
 }
 
+/*mq*/
 @media screen and (max-width: 834px) {
   header img {
     width: 30%;
