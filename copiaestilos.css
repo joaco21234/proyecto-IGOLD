@@ -1,0 +1,606 @@
+@charset "UTF-8";
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos de body */
+body {
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+/* estilos de header */
+header {
+    display: flex;
+    align-items: center;
+}
+header img {
+    width: 25%;
+    height: 100%;
+}
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1.5rem;
+    padding-right: 0px;
+}
+header nav ul li a {
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.contenedor-h4 {
+    display: inline;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+
+h4 {
+    background-color: #FD8902;
+    font-size: 20px;
+    color: whitesmoke;
+    padding-bottom: 2px;
+    padding-top: 1px;
+}
+
+/* estilos de menu de hamburguesa */
+.navbar.navbar-expand-lg.bg-body-tertiary {
+    padding: 0px;
+    align-items: end;
+    display: none;
+}
+
+button.navbar-toggler.collapsed {
+    padding-left: 0px;
+    align-items: end;
+    display: none;
+}
+
+span.navbar-toggler-icon {
+    background-color: tomato;
+    padding-left: 0px;
+    align-items: end;
+    display: none;
+}
+
+/* estilos de barra de navegación */
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    padding: 105px 0px 50px 80px;
+    background-color: #000000;
+}
+
+.form-control-me-2-barra {
+    width: 400px;
+    background-color: #000000;
+    border: none;
+    border: solid 1px whitesmoke;
+}
+
+/* estilos de boton de busqueda */
+.btn-outline-success {
+    color: #fff;
+    background-color: #FD8902;
+    border-color: #FD8902;
+    --bs-btn-hover-bg: #696565;
+    --bs-btn-hover-border-color: #ffffff;
+}
+
+/* estilo de  iconos de usuario y carro de compra*/
+.carro-compra {
+    color: #FD8902;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 1250px;
+    top: 160px;
+}
+
+.usuario {
+    color: #FD8902;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 1200px;
+    top: 159px;
+}
+
+/* estilo de enlaces */
+.enlace-ul {
+    text-decoration: none;
+    position: relative;
+}
+.enlace-ul::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 2px;
+    width: 0px;
+    background-color: #FD8902;
+    transition: width 0.5s ease;
+}
+.enlace-ul:hover::after {
+    width: 100%;
+}
+
+/* estilos de main */
+
+.imagenes-moviles {
+    padding-top: 0px;
+}
+
+.seccion-informacion {
+    background-color: #D67000;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 30px;
+    padding-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.container-promo {
+    display: flex;
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.auto {
+    width: 50px;
+    height: 50px;
+    color: #ECDFCC;
+    padding-right: 10px;
+}
+
+.tarjeta {
+    width: 50px;
+    height: 50px;
+    color: #ECDFCC;
+    padding-right: 10px;
+}
+
+.carro-promo {
+    width: 50px;
+    height: 50px;
+    color: #ECDFCC;
+    padding-right: 10px;
+}
+
+.productos {
+    text-align: center;
+    color: aliceblue;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 50px 100px;
+}
+
+.productos :hover {
+    scale: 1.1;
+    background-color: #fd9c4c;
+    box-shadow: 0 0 10px #fd9c4c;
+}
+
+.imagenes-home {
+    border-radius: 4%;
+    transition-duration: 700ms;
+}
+
+h1 {
+    display: flex;
+    padding-left: 35px;
+    color: whitesmoke;
+}
+
+main div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* estilos de parrafos */
+p {
+    color: whitesmoke;
+    padding: 10px 0 20px 0px;
+    margin: auto;
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*estilos de contacto*/
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+.formulario input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    color: #fff;
+}
+
+.seccion {
+    background-color: rgb(29, 29, 29);
+    padding: 20px 0;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 8px;
+}
+
+/* etilos de iphones */
+
+.h1-celulares {
+    padding-bottom: 50px;
+}
+
+.iphones {
+    color: aliceblue;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: auto;
+    row-gap: 1.5rem;
+}
+
+.iphones :hover {
+    background-color: #000000;
+    box-shadow: 0 0 10px #fd9c4c;
+}
+
+.card-img-top {
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+    transition-duration: 700ms;
+}
+
+.card {
+    border-radius: 4%;
+    transition-duration: 700ms;
+    background-color: #000000;
+    margin: auto;
+}
+
+.card-body {
+    border-radius: 4%;
+    background-color: #FD8902;
+}
+
+.card :hover {
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
+    transition-duration: 700ms;
+    background-color: #121212;
+}
+
+.card-title {
+    transition: none;
+    box-shadow: none;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card-title :hover {
+    transition: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.btn.btn-primary {
+    background-color: #898989;
+    border-color: #000000;
+    color: #000000;
+}
+
+.btn.btn-primary :hover {
+    transition-duration: 700ms;
+    background-color: #ECDFCC;
+    box-shadow: 0 0 10px #fcfcfc;
+}
+
+/* estilos de accsesorios */
+
+.h1-accesorios {
+    padding-bottom: 50px;
+}
+
+.accsesorios {
+    color: aliceblue;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: auto;
+    row-gap: 1.5rem;
+}
+
+.accsesorios :hover {
+    background-color: #000000;
+    box-shadow: 0 0 10px #fd9c4c;
+}
+
+/* estilos de plan canje*/
+.formulario-canje {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    max-width: 500px;
+    margin: auto;
+    background-color: rgb(29, 29, 29);
+}
+.formulario-canje input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    color: #fff;
+    }
+
+h2 {
+    color: whitesmoke;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* estilos de footer */
+footer {
+    padding: 600px 0px 100px 0px;
+    color: aliceblue;
+    display: flex;
+}
+
+/* esilo de iconos del footer */
+
+.instagram {
+    color: #970d77;
+    width: 30px;
+    height: 30px;
+}
+
+/* estilos de tablet */
+@media screen and (max-width: 834px) {
+header img {
+    width: 30%;
+    height: 30%;
+}
+header nav ul {
+    padding: 60px 0px 0 0;
+}
+header nav ul li a {
+    font-size: 18px;
+    gap: 0.1rem;
+}
+.carro-compra {
+    color: #FD8902;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 900px;
+    top: 120px;
+}
+.usuario {
+    color: #FD8902;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 850px;
+    top: 120px;
+}
+.seccion-informacion {
+    background-color: #D67000;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 30px;
+    padding-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.auto {
+    width: 40px;
+    height: 40px;
+    color: #ECDFCC;
+    padding-top: 10px;
+}
+.tarjeta {
+    width: 40px;
+    height: 40px;
+    color: #ECDFCC;
+    padding-top: 10px;
+}
+.carro-promo {
+    width: 40px;
+    height: 40px;
+    color: #ECDFCC;
+}
+.productos {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 50px;
+}
+.iphones {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 50px;
+}
+.accsesorios {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 50px;
+}
+.container-fluid {
+    padding: 100px 0px 0 0;
+}
+.formulario-canje {
+    padding: 15px;
+}
+}
+/* estilos de celular */
+@media screen and (max-width: 500px) {
+body {
+    background-color: #000000;
+    width: 100%;
+    overflow-x: hidden !important;
+}
+header img {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    padding-right: 0px;
+}
+ header nav ul {
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 2px;
+    width: 0px;
+    background-color: rgb(9, 125, 138);
+    transition: width 0.5s ease;
+    display: none;
+}
+.navbar.navbar-expand-lg.bg-body-tertiary {
+    padding: 0px;
+    align-items: end;
+    display: block;
+}
+.container-fluid {
+    display: none;
+    padding: 0;
+    background-color: #FD8902;
+    align-items: end;
+}
+a.nav-link.active {
+    padding: 0.3px;
+}
+ul.navbar-nav {
+    padding: 0;
+    gap: 0;
+}
+button.navbar-toggler-icon {
+    background-color: #FD8902;
+    padding: 15px;
+    display: block;
+}
+.imagenes-moviles {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.form-control-me-2-barra {
+    max-width: 200px;
+    display: none;
+}
+.btn-outline-success {
+    display: none;
+}
+/* estlos de seccion informacion */
+.seccion-informacion {
+    background-color: #D67000;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+    padding-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.seccion-informacion h3 {
+    font-size: 10px;
+}
+.seccion-informacion .auto {
+    width: 15px;
+    height: 10px;
+    color: #ECDFCC;
+    padding: 0;
+    margin-top: 11px;
+}
+.seccion-informacion .tarjeta {
+    width: 15px;
+    height: 10px;
+    color: #ECDFCC;
+    padding: 0;
+    margin-top: 11px;
+}
+.seccion-informacion .carro-promo {
+    width: 15px;
+    height: 10px;
+    color: #ECDFCC;
+    padding: 0;
+    margin-top: 10px;
+}
+
+/* estilos de las otras paginas */
+.productos {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 50px;
+}
+.iphones {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 50px;
+}
+.accsesorios {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 50px;
+}
+.formulario-canje {
+    padding: 15px;
+}
+p {
+    font-size: 15px;
+}
+.carro-compra {
+    color: #FD8902;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 900px;
+    top: 120px;
+    display: none;
+}
+.usuario {
+    color: #FD8902;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 850px;
+    top: 120px;
+    display: none;
+}
+
+}
+/*# sourceMappingURL=style.css.map */

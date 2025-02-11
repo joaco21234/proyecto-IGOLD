@@ -1,15 +1,19 @@
+
 @charset "UTF-8";
+/*reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* estilos de body */
 body {
   background-color: #000000;
   overflow-x: hidden;
 }
 
+/* estilos de header */
 header {
   display: flex;
   align-items: center;
@@ -48,6 +52,7 @@ h4 {
   padding-top: 1px;
 }
 
+/* estilos de menu de hamburguesa */
 .navbar.navbar-expand-lg.bg-body-tertiary {
   padding: 0px;
   align-items: end;
@@ -91,7 +96,7 @@ span.navbar-toggler-icon {
   --bs-btn-hover-border-color: #ffffff;
 }
 
-/* estilo de  iconos de usuario y carro de compra */
+/* estilo de  iconos de usuario y carro de compra*/
 .carro-compra {
   color: #FD8902;
   width: 40px;
@@ -130,6 +135,7 @@ span.navbar-toggler-icon {
 }
 
 /* estilos de main */
+
 .imagenes-moviles {
   padding-top: 0px;
 }
@@ -187,14 +193,15 @@ h3 {
   padding: 50px 100px;
 }
 
-.imagenes-home {
-  border-radius: 4%;
-  transition-duration: 700ms;
-}
-.imagenes-home:hover {
+.productos :hover {
   scale: 1.1;
   background-color: #fd9c4c;
   box-shadow: 0 0 10px #fd9c4c;
+}
+
+.imagenes-home {
+  border-radius: 4%;
+  transition-duration: 700ms;
 }
 
 h1 {
@@ -222,7 +229,7 @@ p {
   justify-content: center;
 }
 
-/* estilos de contacto */
+/*estilos de contacto*/
 .formulario {
   display: flex;
   flex-direction: column;
@@ -248,6 +255,7 @@ p {
 }
 
 /* etilos de iphones */
+
 .h1-celulares {
   padding-bottom: 50px;
 }
@@ -262,33 +270,34 @@ p {
   row-gap: 1.5rem;
 }
 
-.card-img-top {
-  border-top-left-radius: 4%;
-  border-top-right-radius: 4%;
-  transition-duration: 700ms;
-}
-.card-img-top:hover {
+.iphones :hover {
   background-color: #000000;
   box-shadow: 0 0 10px #fd9c4c;
 }
 
+.card-img-top {
+border-top-left-radius: 4%;
+border-top-right-radius: 4%;
+transition-duration: 700ms;
+}
+
 .card {
-  border-bottom-left-radius: 4%;
-  border-bottom-right-radius: 4%;
-  transition-duration: 700ms;
-  background-color: #121212;
+  border-radius: 4%;
   transition-duration: 700ms;
   background-color: #000000;
   margin: auto;
-}
-.card:hover {
-  background-color: #000000;
-  box-shadow: 0 0 10px #fd9c4c;
 }
 
 .card-body {
   border-radius: 4%;
   background-color: #FD8902;
+}
+
+.card :hover {
+  border-bottom-left-radius: 4%;
+  border-bottom-right-radius: 4%;
+  transition-duration: 700ms;
+  background-color: #121212;
 }
 
 .card-title {
@@ -298,18 +307,26 @@ p {
   color: #ffffff;
 }
 
+.card-title :hover {
+  transition: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+
 .btn.btn-primary {
   background-color: #898989;
   border-color: #000000;
   color: #000000;
 }
-.btn.btn-primary:hover {
+
+.btn.btn-primary :hover {
   transition-duration: 700ms;
   background-color: #ECDFCC;
   box-shadow: 0 0 10px #fcfcfc;
 }
 
 /* estilos de accsesorios */
+
 .h1-accesorios {
   padding-bottom: 50px;
 }
@@ -324,17 +341,12 @@ p {
   row-gap: 1.5rem;
 }
 
-.card-img-top {
-  border-top-left-radius: 4%;
-  border-top-right-radius: 4%;
-  transition-duration: 700ms;
-}
-.card-img-top:hover {
+.accsesorios :hover {
   background-color: #000000;
   box-shadow: 0 0 10px #fd9c4c;
 }
 
-/* estilos de plan canje */
+/* estilos de plan canje*/
 .formulario-canje {
   display: flex;
   flex-direction: column;
@@ -360,6 +372,7 @@ h2 {
   justify-content: center;
 }
 
+/* estilos de footer */
 footer {
   padding: 600px 0px 100px 0px;
   color: aliceblue;
@@ -367,12 +380,14 @@ footer {
 }
 
 /* esilo de iconos del footer */
+
 .instagram {
   color: #970d77;
   width: 30px;
   height: 30px;
 }
 
+/* estilos de tablet */
 @media screen and (max-width: 834px) {
   header img {
     width: 30%;
@@ -549,6 +564,7 @@ footer {
     padding: 0;
     margin-top: 10px;
   }
+
   /* estilos de las otras paginas */
   .productos {
     grid-template-columns: repeat(1, 1fr);
@@ -586,6 +602,6 @@ footer {
     top: 120px;
     display: none;
   }
-}
 
-/*# sourceMappingURL=style.css.map */
+}
+  /*# sourceMappingURL=style.css.map */
