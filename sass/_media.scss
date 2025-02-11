@@ -1,5 +1,5 @@
 
-/*mq*/
+/*mq tablet*/
 
 @media screen and (max-width: 834px) {
     header {
@@ -219,6 +219,13 @@
             margin-top: 10px;
         }
     }
+
+footer {
+    ul {
+        gap: 0.5rem;
+        font-size: 12px;
+    }
+}
 
 /* estilos de las otras paginas */
 

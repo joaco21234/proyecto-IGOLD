@@ -395,7 +395,7 @@ footer ul li a:hover {
   color: #fd9c4c;
 }
 
-/*mq*/
+/*mq tablet*/
 @media screen and (max-width: 834px) {
   header img {
     width: 30%;
@@ -571,6 +571,10 @@ footer ul li a:hover {
     color: #ECDFCC;
     padding: 0;
     margin-top: 10px;
+  }
+  footer ul {
+    gap: 0.5rem;
+    font-size: 12px;
   }
   /* estilos de las otras paginas */
   .productos {
