@@ -23,7 +23,7 @@
 }
 
     .carro-compra {
-        color: #FD8902;
+        color: $color-secundario;
         width: 35px;
         height: 35px;
         position: absolute;
@@ -32,7 +32,7 @@
     }
 
     .usuario {
-        color: #FD8902;
+        color: $color-secundario;
         width: 40px;
         height: 40px;
         position: absolute;
@@ -145,7 +145,7 @@
     .container-fluid {
         display: none;
         padding: 0;
-        background-color: #FD8902;
+        background-color: $color-secundario;
         align-items: end;
     }
 
@@ -159,7 +159,7 @@
     }
 
     button.navbar-toggler-icon {
-        background-color: #FD8902;
+        background-color: $color-secundario;
         padding: 15px;
         display: block;
     }
@@ -253,7 +253,7 @@ p {
 }
 
     .carro-compra {
-        color: #FD8902;
+        color: $color-secundario;
         width: 35px;
         height: 35px;
         position: absolute;
@@ -263,7 +263,7 @@ p {
     }
 
 .usuario {
-    color: #FD8902;
+    color: $color-secundario;
     width: 40px;
     height: 40px;
     position: absolute;

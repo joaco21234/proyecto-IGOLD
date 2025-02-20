@@ -93,7 +93,7 @@ p {
     justify-content: center;
 }
 
-  /* estilos de contacto */
+/* estilos de contacto */
 .formulario {
     display: flex;
     flex-direction: column;
@@ -140,7 +140,7 @@ p {
     transition-duration: 700ms;
 
     &:hover {
-        background-color: #000000;
+        background-color: $color-principal;
         box-shadow: 0 0 10px #fd9c4c;
     }
 }
@@ -151,11 +151,11 @@ p {
     transition-duration: 700ms;
     background-color: #121212;
     transition-duration: 700ms;
-    background-color: #000000;
+    background-color: $color-principal;
     margin: auto;
 
     &:hover {
-        background-color: #000000;
+        background-color: $color-principal;
         box-shadow: 0 0 10px #fd9c4c;
     }
 }
@@ -174,8 +174,8 @@ p {
 
 .btn.btn-primary {
     background-color: #898989;
-    border-color: #000000;
-    color: #000000;
+    border-color: $color-principal;
+    color: $color-principal;
 
     &:hover {
         transition-duration: 700ms;
@@ -205,7 +205,7 @@ p {
     transition-duration: 700ms;
 
     &:hover {
-        background-color: #000000;
+        background-color: $color-principal;
         box-shadow: 0 0 10px #fd9c4c;
     }
 }
