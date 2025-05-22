@@ -1,84 +1,146 @@
+let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
 
-// productos
-const productos = [
-    { id: 1, nombre: 'iphone 8', precio: 250 },
-    { id: 2, nombre: 'iphone 11', precio: 500 },
-    { id: 3, nombre: 'iphone 12', precio: 700 },
-    { id: 4, nombre: 'iphone 13', precio: 1100 },
-];
-
-let carrito = []
-let total = 0;
-
-// funcion para mostrar los productos y seleccionar 
-function mostrarProductos() {
-    let mensaje = "Elige un producto para agregar al carrito:\n";
-    productos.forEach(producto => {
-        mensaje += `${producto.id}. ${producto.nombre} - $${producto.precio}\n`;
-    });
-    mensaje += "0. Finalizar compra";
-
-    let seleccion = parseInt(prompt(mensaje));
-
-    if (isNaN(seleccion)) {
-        alert("Por favor, ingresa numeros validos.");
-        return mostrarProductos();
-    }
-
-    switch (seleccion) {
-        case 0:
-            return finalizarCompra();
-        case 1:
-        case 2:
-        case 3:
-        case 4:
-            return agregarAlCarrito(seleccion);
-        case 5:
-        case 6:
-        case 7:
-        case 8:
-        case 9:
-            alert("Producto no disponible por el momento.");
-            return mostrarProductos();
-        default:
-            alert("Producto no encontrado.");
-            return mostrarProductos();
-    }
-}
-
-// funcion para agregar un producto al carrito
-function agregarAlCarrito(idProducto) {
-    const producto = productos.find(p => p.id === idProducto);
+function agregarAlCarrito(producto) {
     carrito.push(producto);
-    total += producto.precio;
-    alert(`${producto.nombre} a sido agregado a tu carrito. Total: $${total}`);
-    mostrarProductos();
+    localStorage.setItem('carrito', JSON.stringify(carrito)); // gaurdar el carrito en localStorage
 }
 
-// funcion para finalizar la compra 
-function finalizarCompra() {
-    let resumen = carrito.length > 0 ? "Tu compra a sido completada:\n" : "No agregaste ningun producto.";
-    carrito.forEach(producto => {
-        resumen += `${producto.nombre} - $${producto.precio}\n`;
+const cartBtn = document.querySelector('#cart-btn');
+const cartPanel = document.querySelector('#cart-panel');
+const closeCart = document.querySelector('#close-cart');
+const checkoutBtn = document.querySelector('#checkout-btn');
+const cartItems = document.querySelector('#cart-items');
+const cartTotal = document.querySelector('#cart-total');
+const clearCartBtn = document.querySelector('#clear-cart-btn');
+
+function actualizarCarrito() {
+    cartItems.innerHTML = '';
+    let total = 0;
+
+    carrito.forEach(item => {
+        const div = document.createElement('div');
+        div.classList.add('item');
+        div.textContent = `${item.nombre} (${item.cantidad}) - $${item.precio * item.cantidad}`;
+        cartItems.appendChild(div);
+        total += item.precio * item.cantidad;
     });
-    resumen += `Total a pagar: $${total}`;
-    alert(resumen);
 
-    seguirComprando()
+    cartTotal.textContent = `Total: $${total}`;
+    localStorage.setItem('carrito', JSON.stringify(carrito));
 }
 
-//funcion para seguir comprando 
-function seguirComprando() {
-    let respuesta = prompt("¿Queres seguir comprando? (si/no)").toLowerCase();
-    if (respuesta === "si") {
-        mostrarProductos();
-    } else if (respuesta === "no") {
-        alert("Gracias por tu compra!");
-    } else {
-        alert("Respuesta no valida. Por favor, responde 'si' o 'no'.");
-        seguirComprando();
+
+//mostrar el carrito
+cartBtn.addEventListener('click', () => {
+    actualizarCarrito();
+    cartPanel.classList.add('show');
+});
+
+//borrar carrito
+clearCartBtn.addEventListener('click', () => {
+    if (carrito.length >= 1) {
+        carrito = [];
+        actualizarCarrito();
+Swal.fire({
+    icon: 'warning',
+    title: 'Carrito eliminado',
+    timer: 1300,
+    showConfirmButton: false
+});
+
+} else {
+Swal.fire({
+    icon: 'info',
+    title: 'El carrito está vacío',
+    timer: 1300,
+    showConfirmButton: false
+});
+
     }
+});
+
+//cerrar
+closeCart.addEventListener('click', () => {
+    cartPanel.classList.remove('show');
+});
+
+//agregar productos desde cards
+document.querySelectorAll('.agregar-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const nombre = btn.getAttribute('data-nombre');
+        const precio = parseFloat(btn.getAttribute('data-precio'));
+        agregarAlCarrito(nombre, precio);
+    });
+});
+
+function agregarAlCarrito(nombre, precio) {
+    const productoExistente = carrito.find(item => item.nombre === nombre);
+
+    if (productoExistente) {
+        productoExistente.cantidad += 1;
+    } else {
+        carrito.push({ nombre, precio, cantidad: 1 });
+    }
+
+    actualizarCarrito();
+Swal.fire({
+    icon: 'success',
+    title: 'Producto agregado',
+    text: `${nombre} se agregó al carrito`,
+    timer: 1500,
+    showConfirmButton: false
+});
+
 }
 
-mostrarProductos();
+
+//finalizar compra
+checkoutBtn.addEventListener('click', () => {
+    const mensajeCompra = document.getElementById('mensaje-compra');
+
+    if (carrito.length === 0) {
+        Swal.fire({
+    icon: 'info',
+    title: 'Agrega productos al carrito',
+    text: 'No puedes finalizar la compra sin productos',
+    timer: 2700,
+    showConfirmButton: false
+});
+;
+        return;
+    }
+
+    let mensaje = 'Gracias por tu compra 😎<br><br>Productos comprados:<br>';
+    Swal.fire({
+    imageUrl: 'https://cdn-icons-png.flaticon.com/512/190/190411.png',
+    imageWidth: 100,
+    imageHeight: 100,
+    imageAlt: 'Custom image',
+    title: 'Compra realizada',
+    timer: 2700,
+    showConfirmButton: false
+});
+carrito.forEach(item => {
+    mensaje += `- ${item.nombre} (${item.cantidad}) - $${item.precio * item.cantidad}<br>`;
+});
+
+
+    let totalCompra = carrito.reduce((acc, item) => acc + item.precio, 0);
+    mensaje += `<br><strong>Total: $${totalCompra} USD</strong>`;
+
+    mensajeCompra.innerHTML = mensaje;
+    localStorage.setItem('resumenCompra', mensaje);
+    localStorage.setItem('totalCompra', totalCompra);
+
+    carrito = [];
+    actualizarCarrito();
+    localStorage.removeItem('carrito');
+
+    document.getElementById('volver-a-comprar').style.display = 'inline-block';
+    document.getElementById('volver-a-comprar').addEventListener('click', () => {
+        document.getElementById('mensaje-compra').innerHTML = '';
+        document.getElementById('volver-a-comprar').style.display = 'none';
+    });
+});
+

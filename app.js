@@ -7,10 +7,9 @@ document.getElementById("formCanje").addEventListener("submit", function(event) 
     const estado = document.getElementById("estado").value;
     const accesorios = document.getElementById("accesorios").value;
     
-    // logica para calcular el valor del canje
     let valorBase;
     
-    // definir valores base segun el modelo de iphone
+    // definir valores segun el modelo de iphone
     switch (modelo) {
         case "iphone12":
             valorBase = 500;

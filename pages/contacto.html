@@ -50,14 +50,27 @@
             </ul>
         </nav>
     </header>
-
     <!-- contenido principal -->
-
     <main>
-        <h1>Contacto</h1>
-        <p>Estamos aquí para ayudarte. Si tienes alguna pregunta sobre nuestros productos, deseas más información sobre nuestros iPhones o necesitas asistencia con tu compra, no dudes en ponerte en contacto con nosotros. Nuestro equipo está listo para ofrecerte el mejor servicio y asegurarse de que tengas una experiencia de compra única. ¡Esperamos saber de ti pronto!</p>
+    <!-- boton del carrito -->
+    <button id="cart-btn">🛒</button>
+    <!-- panel del carrito -->
+        <div id="cart-panel" class="hidden">
+            <h2 class="titulo-carrito">Carrito</h2>
+            <div 
+                id="cart-items">
+            </div>
+            <div id="cart-total">Total: $0</div>
+            <button id="checkout-btn">Finalizar compra</button>
+            <button id="close-cart">Cerrar</button>
+            <button id="clear-cart-btn">Borrar todo</button>
+            <div id="mensaje-compra" class="mt-3 text-success fw-bold"></div>
+            <button id="volver-a-comprar" style="display: none;">🔁 Volver a comprar</button>
+        </div>
+            <h1>Contacto</h1>
+            <p>Estamos aquí para ayudarte. Si tienes alguna pregunta sobre nuestros productos, deseas más información sobre nuestros iPhones o necesitas asistencia con tu compra, no dudes en ponerte en contacto con nosotros. Nuestro equipo está listo para ofrecerte el mejor servicio y asegurarse de que tengas una experiencia de compra única. ¡Esperamos saber de ti pronto!</p>
         <section class="seccion">
-            <h2>CONTACTANOS</h2>
+            <h2 class="contactanos">CONTACTANOS</h2>
             <form class="formulario">
                 <input type="text" placeholder="Nombre" required>
                 <input type="email" placeholder="Email" required>
@@ -66,9 +79,7 @@
             </form>
         </section>
     </main>
-
     <!-- pie de pagina -->
-
     <footer>
         <div class="container-footer">
             <p class="parrafo-footer">¡Gracias por visitar nuestra tienda!
@@ -110,8 +121,9 @@
             <p class="parrafo-footer">© 2025 iGold. Todos los derechos reservados.</p>
         </div>
     </footer>
-
     <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
